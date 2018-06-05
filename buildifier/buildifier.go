@@ -102,6 +102,8 @@ func main() {
 	// Pass down debug flags into build package
 	build.DisableRewrites = disable()
 	build.AllowSort = allowSort()
+ 
+        build.DisableLoadSortForBuildFiles()
 
 	// Check input type.
 	switch *inputType {
